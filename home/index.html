@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="/home/index.html" class="navbar-brand">Nguyễn Ngọc Minh Trí</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/skills/skills.html">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">My Study</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Hi, my name is<span class="text-warning"> MnTri </span></h1>
+            <p class="lead my-4">
+              A 4th-year Electronics and Telecommunications student at VNU-HCMUS, actively seeking opportunities in Computer Networking, IT Helpdesk, IT Support, and Web Development
+            </p>
+            <a href="https://x.com/NguynNgcMinhTr7"><i class="bi bi-twitter text-light mx-1"></i></a>
+            <a href="https://www.facebook.com/minhtri.nguyenngoc.3572"><i class="bi bi-facebook text-light mx-1"></i></a>
+            <a href="https://linkedin.com/in/nguynngcminhtr7"><i class="bi bi-linkedin text-light mx-1"></i></a>
+            <a href="https://github.com/MnTrinfs"><i class="bi bi-github text-light mx-1"></i></a>
+            <p></p>
+            <button class="btn btn-light btn-lg">
+              <a href="https://drive.google.com/file/d/1HB-MNtGd-Hv-qv4uEPPImeb6XKKFm-nr/view?usp=drive_link">
+              My resume</button></a>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll">
+              Contact me
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="/img/5.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">I can work</h2>
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">Part-time</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="/img/fundamentals.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>About Me</h2>
+            <p class="lead">
+              I am a 4th-year student at the Faculty
+              of Electronics and Telecommunications
+              at Ho Chi Minh City University of
+              Science. Over the past 3 years, I have
+              gained practical experience in network
+              administration, including<span id="dots">...</span><span id="more">
+              troubleshooting, configuring, and
+              maintaining network systems. I have
+              also developed JavaScript skills, Network Security
+              and AWS skills. I am eager to apply
+              my expertise in a Computer Networking
+              role, further develop my skills, and
+              make a meaningful impact</span>
+            </p>
+            <a href="#" class="btn btn-light mt-3" button onclick="myFunction()" id="myBtn">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Skills and tools</h2>
+            <p class="lead">
+              I build reliable and user-friendly apps and websites for 
+              smartphones, tablets, and desktops using modern technologies and open-source tools.
+            </p>
+            <a href="#" class="btn btn-light mt-3" id="myBtn">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="/img/11.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row mb-4 align-items-center" id="questions">
+          <div class="col-md-8">
+            <h5 class="text-xl font-bold">Ho Chi Minh City University of Science (VNU-HCMUS)</h5>
+            <h6 class="text-primary">10/2021 - 10/2025 (Electronics & Telecommunications)</h6>
+          </div>
+          <div class="col-md-4 text-end">
+            <img src="/img/HCMUS.png" alt="HCMUS Logo" height="100px">
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h5 class="text-xl font-bold">Nguyen Thi Minh Khai High School HCMC</h5>
+            <h6 class="text-primary">2018-2021</h6>
+          </div>
+          <div class="col-md-4 text-end">
+            <img src="/img/NTMK.png" alt="NTMK Logo" height="100px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Projects -->
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">My Projects</h2>
+        <p class="lead text-center text-white mb-5">
+          My projects back when I was in university.
+        </p>
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                </div>
+                <h3 class="card-title mb-3">Bookstore app (not done)</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                </div>
+                <h3 class="card-title mb-3">Network LAB</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                </div>
+                <h3 class="card-title mb-3">Shopping website</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> District 3, HCMC
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> 0889289526
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span>
+                bthong45@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span>
+                21207105@student.hcmus.edu.vn
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2025 MnTri</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and I will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.1/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.1/mapbox-gl-geocoder.css' type='text/css' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibGF3aXgxMCIsImEiOiJjamJlOGE1bmcyZ2V5MzNtcmlyaWRzcDZlIn0.ZRQ73zzVxwcADIPvsqB6mg';
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9',
+          center: [-79.4512, 43.6568],
+          zoom: 13
+      });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js"></script>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
